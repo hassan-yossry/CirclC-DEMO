@@ -24,6 +24,8 @@ jobs:
           name: Frontend build
           command: |
             npm run frontend:build
+      - node/install-packages:
+          pkg-manager: yarn
       - run:
           name: backend build
           command: |
