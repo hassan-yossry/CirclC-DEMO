@@ -8,10 +8,9 @@ jobs:
     docker:
       # the base image can run most needed actions with orbs
       - image: "cimg/base:stable"
-    steps:
+    steps:      
       - node/install
-          install-yarn: true
-      - checkout
+          install-yarn: true- checkout
       # install dependencies in both apps
       - run:
           name: Front-End install
