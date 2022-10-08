@@ -7,6 +7,7 @@ const contacts = require("./contacts");
 
 const app = express();
 
+//circle comment
 app.use(express.static("public"));
 app.use(cors());
 
